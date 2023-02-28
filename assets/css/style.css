@@ -1,0 +1,1355 @@
+@font-face {
+    font-family: 'Averta-Regular';
+    src: url('/assets/fonts/AvertaStandard-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Averta-SemiBold';
+    src: url('/assets/fonts/AvertaStd-Semibold.ttf');
+}
+
+@font-face {
+    font-family: 'Averta-Bold';
+    src: url('/assets/fonts/AvertaStd-Bold.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Averta-Regular';
+}
+
+/*** FONT CSS ***/
+
+h1 {
+    margin: 0 !important;
+}
+
+h2 {
+    font-size: 1.625rem;
+    text-align: center;
+    margin: 0 !important;
+    font-family: 'Averta-Bold';
+}
+
+h4 {
+    text-align: center;
+    margin: 0 !important;
+    font-size: 1.25rem;
+}
+
+h5 {
+     margin: 0 !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*** FONT CSS ***/
+
+/*** NAVBAR CSS ***/
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0.9375rem;
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+    z-index: 4;
+    background-color: white;
+}
+
+.navbar h2 {
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgba(28, 86, 43, 1);
+}
+
+.close-nav-mobile {
+    color: white !important;
+}
+
+.navbar-header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navbar-header img {
+    width: 85px;
+    position: relative;
+    left: 30%;
+}
+
+.navbar-logo {
+    display: none;
+}
+
+.navbar-logo img {
+    width: 100%;
+}
+
+.navbar-list {
+    position: absolute;
+    list-style-type: none;
+    width: 0%;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    background-color: rgba(28, 86, 43, 1);
+    display: none;
+    margin: 0 !important;
+    padding: 1rem;
+    height: 100vh;
+    color:rgba(28, 86, 43, 0.8);
+}
+
+.navbar-link {
+    padding: 1.625rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    color: #8C6339;
+}
+
+.nav-icon {
+    font-size: 1.5rem;
+    margin-right: 0.75rem;
+}
+
+.navbar-link a {
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-family: 'Averta-Bold';
+    color: white;
+}
+
+/*** NAVBAR CSS ***/
+
+/*** BACKGROUND COLOR CSS ***/
+
+.bg-grey {
+    background-color: #f5f5f5;
+}
+
+/*** BACKGROUND COLOR CSS ***/
+
+/*** WA LINK CSS ***/
+
+.wa-link {
+    position: fixed;
+    z-index: 4;
+    bottom: 0;
+    right: 0;
+}
+
+.wa-link img {
+    height: 50px;
+}
+
+/*** GENERAL CSS ***/
+
+.container {
+    padding: 2.5rem 1.25rem;
+    line-height: 17px;
+}
+
+.section-title {
+    letter-spacing: .9px;
+    color: rgba(28, 86, 43, 0.8);
+    margin-bottom: 1.5rem !important;
+}
+
+
+.text-container {
+    margin-top: 1.5rem;
+}
+
+.text {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+    font-size: 0.9375rem;
+    color: rgba(0,0,0,0.5);
+    letter-spacing: .4px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.text strong {
+    color: #00000080;
+    font-family: 'Averta-SemiBold';
+}
+
+.btn-primary {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    padding: 1.3125rem 2.125rem;
+    border-radius: 3px;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    font-size: 0.9375rem;
+    border: 2px solid black;
+    text-transform: uppercase;
+    font-family: 'Averta-Bold';
+    letter-spacing: 3px;
+}
+
+.content-container {
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem 0 0 0;
+    padding: 1.5rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+    border-radius: 8px;
+}
+
+.content-container span img {
+    font-size: 3rem;
+    color: #1c562b;
+}
+
+.content-outside {
+    padding: 0 0.5rem;
+    width: 50%;
+}
+
+/*** HOME CSS ***/
+
+.slider-container {
+    width: 100%;
+    position: relative;
+}
+
+#home-video {
+    width: 100%;
+}
+
+/* .carousel-inner {
+    height: 320px;
+}
+
+.banner-1 {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/assets/images/slider-3.jpg') no-repeat center;
+    height: 100%;
+    background-size: cover;
+}
+
+.banner-2 {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/assets/images/slider-1.jpg') no-repeat center;
+    height: 100%;
+    background-size: cover;
+}
+
+
+.banner-3 {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/assets/images/slider-2.jpg') no-repeat center;
+    height: 100%;
+    background-size: cover;
+}
+
+
+.carousel-item {
+    height: 100%
+}
+
+.carousel-item img {
+    height: 100%;
+}
+
+.carousel-caption h5 {
+    color: white !important;
+} */
+
+.video-text-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+
+.video-text-container h4 {
+    text-align: left;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Averta-SemiBold', sans-serif;
+}
+
+.coconut-box {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0.5rem 0.75rem;
+    background-color: rgba(28, 86, 43, 0.9);
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.home-container {
+    max-width: 1660px;
+    padding: 0 0.9375rem;
+}
+
+.discover-home-container {
+    box-sizing: border-box;
+    padding: 1.875rem;
+    background-color: #f0f0f0;
+}
+
+.discover-home-container h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.2rem;
+    color: #8C6339;
+    margin-bottom: 0.9375rem;
+    font-family: 'Averta-SemiBold';
+}
+
+.discover-home-container p {
+    color: #444444;
+    font-size: 1.125rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.button-discover-container {
+    width: 100%;
+    text-align: center;
+}
+
+.button-discover {
+    margin-top: 1.125rem !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.625rem 2.1875rem;
+    background-color: #1D4721;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.home-image {
+    width: 100%;
+    margin-top: 1.875rem;
+}
+
+.looking-container {
+    box-sizing: border-box;
+    padding: 1.875rem;
+}
+
+.looking-contain h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.875rem;
+    color: #8C6339;
+    margin-bottom: 0.9375rem;
+    font-family: 'Averta-SemiBold';
+}
+
+.looking-contain p {
+    color: #444444;
+    font-size: 1.125rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/*** ABOUT US CSS ***/
+
+.about-us-title {
+    font-size: 2rem;
+    color:rgba(28, 86, 43, 1);
+    font-family: 'Averta-Bold';
+    margin-bottom: 0.75rem !important;
+}
+
+.about-us-img {
+    width: 100%;
+}
+
+.mission-list {
+    margin: 0;
+    padding: 0;
+}
+
+.mission-list li {
+    margin: 1rem;
+    color: #00000080;
+}
+
+/*** CORE VALUES CSS ***/
+
+.content-value-title {
+    margin: 0.625rem 0 !important;
+    font-family: 'Averta-SemiBold', sans-serif;
+}
+
+.core-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.content-value-text {
+    font-size: 0.875rem;
+}
+
+/*** CONTACT CSS ***/
+
+/* .contact-container {
+    width: 100vw;
+    height: 200px;
+}
+*/
+
+/* .banner-contact {
+    width: 100%;
+    background: url('/assets/images/about-us-test.jpg') no-repeat center center;
+    background-size: cover;
+    height: 245px;
+}  */
+
+.banner-contact img {
+    width: 100%;
+    height: 245pxpx;
+}
+
+.contact-container h1 {
+    padding: 1.875rem 0.9375rem;
+    text-align: center;
+    font-family: 'Averta-Bold';
+    color: #8C6339;
+    text-transform: uppercase;
+    font-size: 2.75rem
+}
+
+.form-contact-us-container {
+    padding: 0 0.9375rem;
+}
+
+.form-contact-us {
+    width: 100%;
+}
+
+.input-container-contact-us {
+    width: 100%;
+}
+
+.input-contact-us {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.625rem;
+    border: 1px solid #c4c4c4;
+    color: #444;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    border-radius: 0 !important;
+}
+
+.input-container-contact-us textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    font-family: 'Averta-Regular' !important;
+    font-size: 1rem;
+    padding: 0.625rem;
+    height: 280px
+}
+
+.button-form-contact-us {
+    margin: 0.5rem 0;
+    text-align: right;
+}
+
+.button-form-contact-us button{
+    padding: 0.5rem 1.25rem;
+    background-color: rgba(28, 86, 43, 0.8);
+    border: none;
+    color: white;
+    font-family: 'Averta-SemiBold';
+}
+
+.explanation-contact-us {
+    padding: 0 0.625rem;
+}
+
+.explanation-contact-us p {
+    font-size: 1.5rem;
+    margin: 4rem 0 1rem 0;
+}
+
+.address-contact-us {
+    font-size: 1rem !important;
+    color: rgba(68, 68, 68, 0.75);
+    font-family: 'Averta-Regular';
+    margin: 0.9375rem 0 !important;
+}
+
+.tel-contact-us {
+    font-size: 1rem !important;
+    color: rgba(68, 68, 68, 0.75);
+    font-family: 'Averta-Regular';
+    margin: 0.9375rem 0 !important;
+}
+
+.email-contact-us {
+    font-size: 1rem !important;
+    color: rgba(68, 68, 68, 0.75);
+    font-family: 'Averta-Regular';
+    margin: 0.9375rem 0 !important;
+}
+
+.email-contact-us strong {
+    text-decoration: underline;
+    color: #f26c4f;
+}
+
+.contact-us-maps {
+    width: 100%;
+    padding: 0 0.625rem !important;
+    margin: 1rem 0 !important;
+}
+
+/*** PRODUCT CSS ***/
+
+.product-list-container {
+    overflow-x: auto;
+    width: 100%;
+    white-space: nowrap;
+    padding: 2rem 0 1rem 0;
+}
+
+.product-container {
+    width: 70%;
+    position: relative;
+    margin: 0 0.875rem;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.product-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.product-content-container {
+    position: absolute;
+    height: 98%;
+    background-color: rgba(0,0,0,0.3);
+    bottom: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.875rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-content-container h4 {
+    color: white !important;
+    font-family: 'Averta-SemiBold';
+    font-size: 1rem !important;
+    text-align: left !important;
+    width: 100%;
+}
+
+.product-content-container a {
+    text-decoration: none;
+    color: white;
+}
+
+/*** PRODUCT PAGE CSS ***/
+
+.product-page-container {
+    width: 100%;
+    /* padding: 0 0.9375rem 3.125rem 0.9375rem; */
+}
+
+.product-banner {
+    background: linear-gradient(rgba(29, 71, 33, 0.3), rgba(29, 71, 33, 0.3)), 
+    url('/assets/images/product-banner.jpg') no-repeat center center;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+}
+
+.product-title-container {
+    padding: 2.5rem 0.9375rem 1rem 0.9375rem;
+}
+
+.product-title-container h2 {
+    font-size: 2.75rem;
+    font-family: 'Averta-Bold';
+    text-align: center;
+    color: rgba(28, 86, 43, 1);
+}
+
+.product-desc-container {
+    padding: 0 0.9375rem 2rem 0.9375rem;
+}
+
+.product-desc-container p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 !important;
+}
+
+.product-list-container {
+    padding: 0.9375rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.product-image-container {
+    width: 95%;
+    box-sizing: border-box;
+    margin-bottom: 1.4rem;
+    position: relative;
+    border-radius: 10px;
+}
+
+.product-image-container img {
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+.product-image-desc {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35));
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    text-align: left;
+    padding: 0.75rem;
+}
+
+.product-image-desc h3 {
+    font-size: 1.25rem;
+    font-family: 'Averta-SemiBold';
+    color: white;
+    letter-spacing: 2px;
+}
+
+.product-image-desc p {
+    font-size: 1rem;
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Averta-SemiBold';
+}
+
+/*** FOOTER ***/
+
+.footer-container {
+    padding: 1.875rem 0;
+    background-color: rgba(28, 86, 43, 1);
+}
+
+.footer-contact-container {
+    padding: 0 0.9375rem 2.5rem 0.9375rem;
+    border-bottom: 1px solid white;
+}
+
+.footer-container h3 {
+    font-size: 2.625rem;
+    margin: 0 0 0.75rem 0!important;
+    font-weight: 800;
+    color: white;
+    font-family: 'Averta-SemiBold';
+}
+
+.footer-container p {
+    font-size: 1.125rem;
+    color: white;
+    font-weight: 200;
+}
+
+.footer-container a {
+    color: white;
+}
+
+.footer-contact {
+    margin: 0;
+}
+
+.footer-find-us {
+    padding: 1rem 0.9375rem 2rem 0.9375rem;
+    border-bottom: 1px solid white;
+}
+
+.footer-products {
+    padding: 1rem 0.9375rem 2rem 0.9375rem;
+    border-bottom: 1px solid white;
+}
+
+.footer-products ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-products ul li {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+}
+
+.footer-certificate {
+    padding: 1rem 0.9375rem 2rem 0.9375rem;
+    border-bottom: 1px solid white;
+}
+
+.image-certificate-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-certificate-content {
+    width: 32%;
+    margin: 1rem 2rem;
+}
+
+.image-certificate-content img {
+    width: 100%;
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+.footer-copyright h4 {
+    color: white;
+    font-size: 1rem;
+    margin: 1rem 0 !important;
+}
+
+.footer-copyright h2 {
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Averta-SemiBold'
+}
+
+.g-maps {
+    width: 100%;
+    height: 450px;
+}
+
+.footer-copyright-desktop {
+    display: none;
+}
+/*** DETAIL PRODUCT CSS ***/
+
+.banner-detail-product {
+    position: relative;
+    width: 100%;;
+}
+
+.banner-detail-product img {
+    width: 100%;
+}
+
+.detail-product-inside {
+    width: 100%;
+}
+
+.detail-right {
+    display: none;
+}
+
+.detail-left {
+    padding-right: 0;
+}
+
+.detail-product-container {
+    padding: 2.5rem 1.25rem;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+.detail-product-container h1 {
+    font-family: 'Averta-Bold';
+    color: black;
+    text-align: left;
+    font-size: 2.125rem;
+    letter-spacing: 0.3px;
+}
+
+.detail-product-contain {
+    padding: 1.0625rem 0;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.detail-product-contain p{
+    font-size: 0.9375rem;
+    line-height: 1.6rem;
+}
+
+.detail-product-contain p strong {
+    font-family: 'Averta-Bold';
+    letter-spacing: 0.5px;
+}
+
+.specification-product-container ol {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin: 0 !important;
+}
+
+.specification-product-container ol li {
+    margin: 0.75rem 0;
+    font-family: 'Averta-SemiBold';
+}
+
+.specification-product-container ol li span {
+    font-family: 'Averta-Regular';
+}
+
+.specification-product-container ol li span strong {
+    font-family: 'Averta-SemiBold'; 
+}
+
+.specification-product-container ol li ul li{
+    margin: 0.5rem 0;
+    font-family: 'Averta-Regular';
+}
+
+.detail-photo-product-container {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.detail-photo-product-container img {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+@media only screen and (min-width: 75em) {
+    /*** NAVBAR CSS ***/
+
+    .navbar {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        padding: 0.9375rem;
+        position: sticky;
+        top: 0;
+        position: -webkit-sticky;
+        z-index: 4;
+        background-color: white;
+    }
+
+    .navbar h2 {
+        display: none;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar-list {
+        list-style-type: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        color:rgba(28, 86, 43, 0.8);
+        background-color: white;
+    }
+
+    .navbar-link {
+        width: fit-content;
+        padding: 0 1rem!important;
+        border-top: none;
+        border-bottom: none;
+        color: rgba(28, 86, 43, 0.8) !important;
+    }
+
+    .nav-icon {
+        display: none !important;
+    }
+
+    .navbar-logo {
+        width: 248px;
+        height: 100%;
+        margin-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navbar-link a {
+        text-decoration: none;
+        font-size: 1.125rem;
+        font-family: 'Averta-Regular';
+        color: rgba(29, 71, 33, 0.9) !important;
+        transition: font-family 1s;
+    }
+
+    .navbar-link a:hover {
+        font-family: 'Averta-SemiBold';
+        color: #8C6339 !important;
+    }
+
+    /*** NAVBAR CSS ***/
+
+    /*** HOME CSS ***/
+
+    .slider-container {
+        height: 557px;
+    }
+
+    #home-video {
+        min-width: 0;
+        position: absolute;
+        top: -250px;
+    }
+
+    .home-container {
+        margin: 0 auto;
+        padding: 2rem 1.25rem;
+        position: relative;
+    }
+
+    .video-text-container {
+        padding: 0 3rem;
+    }
+
+    .video-text-container h4 {
+        font-size: 2.75rem;
+        position: relative;
+        top: 20px;
+    }
+
+    .carousel-inner {
+        height: 590px;
+    }
+
+    .home-container .parallax {
+        background-image: url('/assets/images/home-2.jpg');
+        min-height: 570px;
+        width: 65%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .home-container img {
+        display: none;
+    }
+
+    .discover-home-container {
+        box-sizing: border-box;
+        padding: 1.875rem;
+        background-color: #f0f0f0;
+        position: absolute;
+        width: 50%;
+        top: 19%;
+        right: 1.25rem;
+    }
+
+    .discover-home-container h1 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2.875rem;
+        color: #8C6339;
+        margin-bottom: 0.9375rem;
+        font-family: 'Averta-SemiBold';
+    }
+
+    .discover-home-container p {
+        color: #444444;
+        font-size: 1.125rem;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .button-discover-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .button-discover {
+        margin-top: 1.125rem !important;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.625rem 2.1875rem;
+        background-color: #1D4721;
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .home-image {
+        display: none;
+    }
+
+    .looking-container {
+        box-sizing: border-box;
+        padding: 1.875rem;
+        width: 100%;
+        height: 50vh;
+        background: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.7)),url("/assets/images/banner-home.jpg") no-repeat;
+        background-size: cover;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .looking-contain {
+        width: 55%;
+    }
+
+    .looking-contain h1 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2.875rem;
+        color: #bf7222;
+        margin-bottom: 0.9375rem;
+        font-family: 'Averta-SemiBold';
+        margin-bottom: 0.9rem !important;
+    }
+
+    .looking-contain p {
+        color: white;
+        font-size: 1.125rem;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    /*** ABOUT US CSS ***/
+
+    .about-us-title {
+        font-size: 2rem;
+        color:rgba(28, 86, 43, 1);
+        font-family: 'Averta-Bold';
+        margin-bottom: 0.75rem !important;
+    }
+
+    .about-us-img {
+        width: 100%;
+    }
+
+    .mission-list {
+        margin: 0;
+        padding: 0;
+    }
+
+    .mission-list li {
+        margin: 1rem;
+        color: #00000080;
+    }
+
+    /*** CONTACT US ***/
+
+    .banner-contact {
+        display: none;
+    }
+    
+    .contact-us-content {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .contact-us-inside {
+        width: 49%;
+    }
+
+    .banner-contact-desktop {
+        background: linear-gradient(rgba(29, 71, 33, 0.3), rgba(29, 71, 33, 0.3)),url("/assets/images/banner-desktop-contact.jpg") no-repeat;
+        background-size: cover;
+        background-position-y: 76%;
+        height: 42vh;
+    }
+
+    .form-contact-us-container {
+        padding: 0 3rem;
+    }
+
+    .explanation-contact-us {
+        padding: 0 3rem;
+    }
+
+    .contact-us-maps {
+        padding: 0 3rem !important;
+        margin-top: 2rem !important;
+    }
+
+    .explanation-contact-us p {
+        margin: 0 0 1rem 0;
+    }
+
+    /*** FOOTER ***/
+
+    .footer-container {
+        padding: 1.875rem 0;
+        background-color: rgba(28, 86, 43, 1);
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-contact-container {
+        padding: 0 1.25rem;
+        width: 25%;
+        border-bottom: 0 !important;
+    }
+
+    .footer-container h3 {
+        font-size: 1.9rem;
+        margin: 0 0 0.75rem 0!important;
+        font-weight: 800;
+        color: white;
+        font-family: 'Averta-SemiBold';
+    }
+
+    .footer-container p {
+        font-size: 1.125rem;
+        color: white;
+        font-weight: 200;
+    }
+
+    .footer-container a {
+        color: white;
+    }
+
+    .footer-contact {
+        margin: 0;
+    }
+
+    .footer-find-us {
+        padding: 0 1.25rem;
+        width: 25%;
+        border-bottom: 0 !important;
+    }
+
+    .footer-products {
+        padding: 0 1.25rem;
+        width: 20%;
+        border-bottom: 0 !important;
+    }
+
+    .footer-products ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .footer-products ul li {
+        color: white;
+        margin-bottom: 1rem;
+        font-size: 1.125rem;
+    }
+
+    .footer-certificate {
+        padding: 0 1.25rem;
+        width: 30%;
+        border-bottom: 0 !important;
+    }
+
+    .image-certificate-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .image-certificate-content {
+        width: 25%;
+        margin: 0.5rem !important;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .image-certificate-content img {
+        width: 100%;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        display: none;
+    }
+
+    .footer-copyright h4 {
+        color: white;
+        font-size: 1rem;
+        margin: 1rem 0 !important;
+    }
+
+    .footer-copyright h2 {
+        font-size: 1.5rem;
+        color: white;
+        font-family: 'Averta-SemiBold'
+    }
+
+    .g-maps {
+        width: 100%;
+        height: 200px;
+    }
+
+    .footer-copyright-desktop {
+        margin-top: 1rem;
+        width: 100%;
+        padding-top: 1rem;
+        text-align: center;
+        border-top: 1px solid white;
+        color: white;
+        display: block;
+    }
+
+    .footer-copyright-desktop h2 {
+        margin-top: 0.5rem !important;
+    }
+
+    /*** CORE CSS ***/
+
+    .container {
+        padding: 0;
+        line-height: 17px
+    }
+
+    .container img {
+        display: none;
+    }
+
+    .banner-about {
+        background: linear-gradient(rgba(29, 71, 33, 0.3), rgba(29, 71, 33, 0.3)), url('/assets/images/our-company-1.jpg') no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        height: 42vh;
+    }
+
+    .text-container {
+        padding: 1rem 7rem 3.125rem 7rem;
+    }
+    
+    .section-title {
+        margin: 0 !important;
+        padding: 1.5rem 0;
+    }
+
+    .core-list-container {
+        padding: 0 7rem 1.875rem 7rem !important;
+    }
+
+    .content-outside {
+        width: 25%;
+    }
+
+    .product-banner {
+        height: 42vh;
+    }
+
+    .product-desc-container {
+        padding: 0 7rem 2rem 7rem;
+    }
+
+    .product-desc-container p {
+        line-height: 40px;
+    }
+
+    .content-outside-container {
+        box-shadow: 0 0 0 0 !important;
+    }
+
+    .product-list-container {
+        justify-content: space-evenly;
+        padding: 0.9375rem 7rem;
+    }
+
+    .product-image-container {
+        width: 45%;
+        border-radius: 16px;
+    }
+
+    .product-image-desc {
+        border-radius: 16px;
+    }
+
+    .product-image-desc p {
+        font-size: 1.125rem;
+    }
+
+    .banner-detail-product {
+        display: none;
+    }
+
+    .detail-product-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2.5rem 7rem;
+    }
+
+    .detail-product-inside {
+        width: 50%;
+    }
+
+    .detail-left {
+        padding-right: 1.5rem;
+    }
+
+    .detail-right {
+        display: block;
+    }
+
+    .detail-product-inside img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .detail-photo-product-container {
+        display: none;
+    }
+
+    .content-container span img {
+        display: block;
+        width: 140px;
+        height: 140px;
+        margin: 0 auto;
+    }
+
+}
